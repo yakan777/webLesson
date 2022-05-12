@@ -1,0 +1,43 @@
+#container{
+	width:1000px;
+	margin:0 auto;
+	font-family: "Sawarabi Gothic";
+	background-color:#abe7e2;
+	padding:20px 0 40px;
+}
+h1{
+	width:300px;
+	margin:0 auto 20px;
+	text-align:center;
+	font-size:67px;
+	border:5px solid #99d0ff;
+	padding:0 10px;
+	background-color: #fff;
+	color:#d4aec1;
+	text-shadow: 1px 1px 0 #333;
+}
+.class1{
+	text-align:center;
+}
+table{
+	width:80%;
+	margin:20px auto 0;
+}
+td,th{
+	border:5px solid #d6d18b;
+	text-align: center;
+	background-color:#fff;
+	font-size:50px;
+	padding:5px 0;
+}
+th{
+	color:#56c8ff;
+	background-color:#00ff76;
+	text-shadow: 1px 1px 0 #333;
+}
+tr *:first-child{
+	color:#ff69b4;
+}
+tr *:last-child{
+	color:#0ba9ea;
+}
