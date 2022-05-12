@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Box model</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+		<link rel="stylesheet" href="css/main.css">
+<style>
+*{
+	box-sizing:border-box;/*これですべての値を固定*/
+}
+#boxA{
+	background:yellow;
+	width:300px;
+	padding:20px;
+	margin-top:20px;
+	/*↓上と下の空白は数値の大きい物が優先(この場合はboxBが適応)*/
+	margin-bottom:20px;	margin-left:20px;
+	/*margin:20px;四方に有効*/
+	/*margin:10px 20px;上下　左右*/
+	/*margin:10px 20px 30px;上　左右　下*/
+	/*margin:10px 20px 30px 20px; 上　右　下　左(時計回り)*/
+	border:10px solid black;
+
+}
+#boxB{
+	background:blue;
+	width:300px;
+	margin-left:20px;
+	margin-top:30px;
+	border:2px solid black;
+	border-radius:10px;/*角を丸くする*/
+	color:white;
+	padding:5px;
+}
+#boxC{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background:orange;
+	text-align:center;/*文字を中央に配置*/
+	line-height:100px;
+	margin:20px;
+	border:4px dotted black;
+
+}
+#lorem{
+	width:70%;
+	background:#ccc;/*←同じ物は省略可*/
+	margin:20px auto;/*autoで画面の中心に配置*/
+	padding:20px 30px;
+	line-height:2.2;/*行間を設定*/
+}
+</style>
+</head>
+<body>
+	<div id="boxA">boxA<br>boxA2</div>
+	<div id="boxB">boxB</div>
+	<div id="boxC">boxC</div>
+	<p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
